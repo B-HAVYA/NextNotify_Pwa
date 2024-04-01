@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -30,4 +30,98 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.container {
+  background: #000000;
+}
+
+.btn-grad {
+  width: 327px;
+  height: 42px;
+  background-image: linear-gradient(
+    to right,
+    #9d0d3d 0%,
+    #df522b 100%,
+    #c77d2c 30%
+  );
+  margin: 15px;
+  padding: 9px 9px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: white;
+  border-radius: 4px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.txto {
+  text-align: center;
+  width: 327px;
+  font-family: "Inter", sans-serif;
+  font-size: 29px;
+  font-weight: 500;
+  line-height: 31.9px;
+  height: 41px;
+  color: white;
+}
+
+.secondary-text-styles {
+  font-family: "Inter", sans-serif;
+  font-size: 19px;
+  width: 327px;
+  height: 23px;
+  font-weight: 400;
+  line-height: 22.99px;
+  text-align: center;
+  color: white;
+}
+
+.containerx {
+  width: 25%;
+  height: 100%;
+  position: relative;
+}
+
+.img-bg {
+  width: 344px;
+  height: 344px;
+  object-fit: cover;
+}
+
+.img-overlay {
+  width: 64px;
+  height: 64px;
+  padding: 5.33px;
+  gap: 0px;
+}
+
+.box {
+  width: 370px;
+  height: 600px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
 }
